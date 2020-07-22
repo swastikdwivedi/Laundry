@@ -1,0 +1,336 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* This is all about the navabar */
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    bottom: 0;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 90%;
+    width: 100%;
+    background-color: rgb(75, 70, 70);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#logo {
+    margin: 2px 56px;
+}
+
+#logo img {
+    height: 65px;
+    border-radius: 100px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    margin: 25px 10px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(150, 149, 149);
+    transition-duration: 1s;
+}
+
+/* About Home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: 10px 75px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    background: url('Bg.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#home h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#home p {
+    font-weight: 900;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#home .btn {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px black;
+}
+
+#home .btn:hover {
+    background-color: grey;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: -3px -3px 10px rgb(0, 0, 0);
+    transition-duration: 1.1s;
+}
+
+@media (min-width:768px)and (max-width:1024px) {
+    #home::before {
+        height: 56%;
+    }
+}
+
+/* This is the section for services portion */
+
+#Services {
+    margin-top: 170px;
+}
+
+.container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 50px;
+}
+
+.box {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 21px;
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 5px 10px black;
+    transform: skew(5deg);
+    transition-duration: 1s;
+}
+
+.box:hover {
+    transform: skew(0deg);
+    transform: scale(0.9);
+}
+
+.box1:hover {
+    box-shadow: -5px -5px 5px rgb(149, 137, 221);
+}
+
+.box2:hover {
+    box-shadow: -5px -5px 5px rgb(127, 231, 141);
+}
+
+.box3:hover {
+    box-shadow: -5px -5px 5px rgb(95, 90, 90);
+}
+
+.box p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+}
+
+.box button {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    box-shadow: 4px 4px 10px black;
+}
+
+@media(min-width:768px)and (max-width:1024px) {
+    .box button {
+        margin-top: 30px;
+    }
+}
+
+.container button:hover {
+    background-color: grey;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: -2px -2px 5px rgb(0, 0, 0);
+    transition-duration: 1.1s;
+}
+
+.box img {
+    border-radius: 100px;
+    height: 170px;
+    width: 300px;
+}
+
+/* This is for the Contact Part */
+
+#Contact {
+    height: 700px;
+    margin-top: 50px;
+    /* position: relative;   Don't use it otherwise nav links will not work as navbar is also relative */
+}
+
+#Contact h1 {
+    margin-left: 69px;
+    padding-top: 100px;
+}
+
+#Contact::before {
+    content: "";
+    background: url('Contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    /*Don't give it the top value otherwise it will take the home's position */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+@media (min-width:768px)and (max-width:1024px){
+    #Contact::before{
+        height: 60%;
+    }
+}
+
+#form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.form-items {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 20px;
+    max-width: 500px;
+    border: none;
+}
+
+.form-items label {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.form-items textarea {
+    margin-left: 100px;
+    border: none;
+    box-shadow: 2px 2px 10px rgb(58, 57, 57);
+}
+
+.form-items input {
+    font-weight: 700;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 1.2px solid black;
+}
+
+.form-items input:hover {
+    box-shadow: 2px 2px 4px black;
+    border-bottom: none;
+}
+
+.form-items #Name {
+    margin-left: 19px;
+}
+
+.form-items #Email {
+    margin-left: 21px;
+}
+
+.form-items button {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 160px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    box-shadow: 4px 4px 10px black;
+}
+
+.form-items button:hover {
+    background-color: grey;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: -4px -4px 10px rgb(0, 0, 0);
+    transition-duration: 1.1s;
+}
+
+/* This is the footer part */
+
+#footer {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Utility Classes for convinience */
+
+.h-primary {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.0rem;
+    padding: 10px;
+}
+
+.h-secondary {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.btn {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}

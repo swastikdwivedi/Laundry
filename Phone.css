@@ -1,0 +1,156 @@
+/* This is for navbar */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar::before {
+    height: 105%;
+}
+
+#navbar ul li {
+    margin: 0px 0px;
+}
+
+#navbar ul li a {
+    padding: 0px 10px;
+}
+
+#logo {
+    margin: 0px 5px;
+}
+
+#logo img {
+    height: 60px;
+    border-radius: 100px;
+}
+
+@media(max-width:280px) {
+    #navbar ul li a {
+        padding: 0px 8px;
+    }
+}
+
+/* This is for  home*/
+
+#home {
+    margin: 0px 29px;
+    height: 375px;
+}
+
+#home p {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 2px 50px;
+}
+
+/* This is for services */
+
+#Services {
+    margin-top: 220px;
+}
+
+@media (max-width:360px) {
+    #Services {
+        margin-top: 150px;
+    }
+}
+
+.container {
+    margin: 10px 0px;
+}
+
+.box {
+    margin: auto;
+    margin-top: 40px;
+    transform: skew(0deg);
+    width: 250px;
+    height: 327px;
+}
+
+.box img {
+    height: 140px;
+    width: 200px;
+    margin: 6px 25px;
+}
+
+/* This is for contact */
+
+#Contact {
+    margin-top: 0px;
+}
+
+#Contact::before {
+    width: 100%;
+}
+
+#form-box {
+    margin: 0px;
+}
+
+.form-items {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.form-items input {
+    font-weight: 500;
+    width: 190px;
+}
+
+.form-items label {
+    font-size: 16px;
+    margin: 0px 19px;
+}
+
+.form-items #Name {
+    margin-left: 0px;
+}
+
+.form-items #Email {
+    margin-left: 2px;
+}
+
+.form-items #Phone {
+    margin-left: -13px;
+}
+
+.form-items textarea {
+    margin-left: 88px;
+    height: 116px;
+    width: 192px;
+}
+
+.form-items button {
+    margin-left: 109px;
+}
+
+@media(max-width:280px) {
+    .form-items label {
+        margin: 0px 8px;
+    }
+    .form-items textarea {
+        margin-left: 68px;
+    }
+    .form-items button {
+        margin-left: 116px;
+        width: 100px;
+    }
+}
+
+/* This is for footer */
+
+#footer {}
+
+/* These are utility classes  */
+
+.h-primary {
+    font-size: 1.5rem;
+}

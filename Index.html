@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry.com</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans+Condensed:wght@300&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:560px)" href="Phone.css">
+</head>
+
+<body>
+    <!-- This is the Navbar part -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="LaundryLogo.jpg" alt="LaundryLogo.com" style="color: white;">
+        </div>
+
+        <ul>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#Services">Services</a></li>
+            <!-- <li class="items"><a href="#">About</a></li>    -->
+            <li class="items"><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the Home Part -->
+    <section id="home">
+        <h1 class="h-primary">We will take care of your clothes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores dolores corrupti aperiam hic
+            suscipit ipsum corporis nobis. Modi, dolore.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn">Try Now</button>
+    </section>
+
+    <!-- This is the Service Part -->
+    <section id="Services">
+        <h1 class="h-primary center">
+            Our Services
+        </h1>
+        <div class="container">
+            <div class="box box1">
+                <img src="Services1.jpg" alt="">
+                <h2 class="h-secondary center"> Dry Cleaning</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima tenetur!
+                    Facere magni et quod sequi ut consequuntur hic vel eos? Necessitatibus, eaque. Dignissimos possimus
+                    reprehenderit saepe ratione deleniti sit!</p>
+                <button class="btn ">Read More..</button>
+            </div>
+            <div class="box box2">
+                <img src="Services2.jpg" alt="">
+                <h2 class="h-secondary center">Home Delivery</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima tenetur!
+                    Facere magni et quod sequi ut consequuntur hic vel eos? Necessitatibus, eaque. Dignissimos possimus
+                    reprehenderit saepe ratione deleniti sit!</p>
+                <button class="btn">Read More..</button>
+            </div>
+            <div class="box box3">
+                <img src="Basket.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Acceptance</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima tenetur!
+                    Facere magni et quod sequi ut consequuntur hic vel eos? Necessitatibus, eaque. Dignissimos possimus
+                    reprehenderit saepe ratione deleniti sit!</p>
+                <button class="btn">Read More..</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- This is the contact Part -->
+    <section id="Contact">
+        <h1 class="h-primary center">
+            Contact Us
+        </h1>
+        <div id="form-box">
+            <form action="">
+                <div class="form-items">
+                    <label for="Name">Name:</label>
+                    <input class="center" name="UserName" type="text" id="Name" required  placeholder="Enter Your Name">
+                </div>
+                <div class="form-items">
+                    <label for="Email">Email:</label>
+                    <input class="center" name="UserEmail" type="email" id="Email"  placeholder="Enter Your Email">
+                </div>
+                <div class="form-items">
+                    <label for="Phone">Contact:</label>
+                    <input class="center" name="UserContact" type="tel" required id="Phone"
+                        placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-items">
+                    <textarea class="form-items center" name="" required id="Address" cols="39" rows="10"
+                        placeholder="Your Location"></textarea>
+                </div>
+                <div class="form-items">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div id="footer">
+            <p class="center">Copyright &copy; 2020-2021 All right reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
